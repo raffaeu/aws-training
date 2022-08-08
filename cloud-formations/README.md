@@ -26,3 +26,13 @@ By using `aws deploy`, you will automatically create incremental changesets insi
 ## How to concat multiple Stack(s) together
 
 You might come up with scenarios where you want to concat multiple Cloud Stack together. For example, you will need to generate a CMK (Custom Managed Key) in order to encrypt an S3 storage.
+
+# Available Templates
+
+## S3 (Simple Storage Service)
+
+[Documentation](https://aws.amazon.com/s3)
+
+| Template | Description | Parameters |
+| :--- | :--- | :--- |
+| [01-default-s3.template.yaml](./services/s3/01-default-s3.template.yaml) | Create a basic S3 storage with default public access enabled | - `BucketNameParameter`: The name of the Bucker prefixed by your Account ID |
