@@ -36,3 +36,7 @@ You might come up with scenarios where you want to concat multiple Cloud Stack t
 | Template | Description | Parameters |
 | :--- | :--- | :--- |
 | [01-default-s3.template.yaml](./services/s3/01-default-s3.template.yaml) | Create a basic S3 storage with default public access enabled | - `BucketNameParameter`: The name of the Bucker prefixed by your Account ID |
+| [02-private-s3.template.yaml](./services/s3/02-private-s3.template.yaml) | Create a basic S3 storage with default private access enabled | - `BucketNameParameter`: The name of the Bucker prefixed by your Account ID |
+| [03-version-s3.template.yaml](./services/s3/03-version-s3.template.yaml) | Create a basic S3 storage with versioning enabled | - `BucketNameParameter`: The name of the Bucker prefixed by your Account ID |
+| [04-encrypted-aws-s3.template.yaml](./services/s3/04-encrypted-aws-s3.template.yaml) | Create an S3 storage with AWS managed encryption | - `BucketNameParameter`: The name of the Bucker prefixed by your Account ID |
+| [05-encrypted-kms-s3.template.yaml](./services/s3/05-encrypted-kms-s3.template.yaml) | Create an S3 storage with AWS KMS encryption | - `BucketNameParameter`: The name of the Bucker prefixed by your Account ID |
