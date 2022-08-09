@@ -27,7 +27,7 @@ By using `aws deploy`, you will automatically create incremental changesets insi
 
 You might come up with scenarios where you want to concat multiple Cloud Stack together. For example, you will need to generate a CMK (Custom Managed Key) in order to encrypt an S3 storage.
 
-# Available Templates
+# Available Services
 
 ## S3 (Simple Storage Service)
 
@@ -40,3 +40,11 @@ You might come up with scenarios where you want to concat multiple Cloud Stack t
 | [03-version-s3.template.yaml](./services/s3/03-version-s3.template.yaml) | Create a basic S3 storage with versioning enabled | - `BucketNameParameter`: The name of the Bucker prefixed by your Account ID |
 | [04-encrypted-aws-s3.template.yaml](./services/s3/04-encrypted-aws-s3.template.yaml) | Create an S3 storage with AWS managed encryption | - `BucketNameParameter`: The name of the Bucker prefixed by your Account ID |
 | [05-encrypted-kms-s3.template.yaml](./services/s3/05-encrypted-kms-s3.template.yaml) | Create an S3 storage with AWS KMS encryption | - `BucketNameParameter`: The name of the Bucker prefixed by your Account ID |
+
+# Available Architectures
+
+## Static Website
+
+A static website, hosted on an S3 bucket, exposed to CloudFront and protected via Route 53, in order to provide a custom Domain name.
+
+[Goto the project](./architectures/s3-website/)
