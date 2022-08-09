@@ -31,4 +31,4 @@ Then you can copy the demo file to verify that the Bucket is created correctly a
 $ aws s3 cp 
 .\cloud-formations\architectures\s3-website\index.html 
 s3://static-s3-bucket
- ```
+```

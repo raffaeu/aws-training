@@ -23,10 +23,6 @@ Templates provides output parameters, which can be used to identify the template
 
 By using `aws deploy`, you will automatically create incremental changesets inside your Cloud Stack Formation, which allows you to track the incremental changes applied to your resources.
 
-## How to concat multiple Stack(s) together
-
-You might come up with scenarios where you want to concat multiple Cloud Stack together. For example, you will need to generate a CMK (Custom Managed Key) in order to encrypt an S3 storage.
-
 # Available Services
 
 ## S3 (Simple Storage Service)
@@ -43,8 +39,8 @@ You might come up with scenarios where you want to concat multiple Cloud Stack t
 
 # Available Architectures
 
-## Static Website
+Below is a list of out-of-the-box architectures with a CloudFormation template and documentation, which is ready to be deployed and tested.
 
-A static website, hosted on an S3 bucket, exposed to CloudFront and protected via Route 53, in order to provide a custom Domain name.
-
-[Goto the project](./architectures/s3-website/)
+| Template | Solution | Description |
+| :--- | :--- | :--- |
+| S3 Static Website | [Goto the project](./architectures/s3-website/) | A static website, hosted on an S3 bucket, exposed to CloudFront and protected via Route 53, in order to provide a custom Domain name |
