@@ -19,11 +19,16 @@ We have used the following components:
 For the rest, execute as usual:
 
 ```bash
-$ aws cloudformation deploy --template-file .\cloud-formations\architectures\s3-website\s3-static.template.yaml --stack-name static-s3 --parameter-overrides "BucketNameParameter=static-s3-bucket"
+$ aws cloudformation deploy 
+    --template-file .\cloud-formations\architectures\s3-website\s3-static.template.yaml 
+    --stack-name static-s3 
+    --parameter-overrides "BucketNameParameter=static-s3-bucket"
 ```
 
 Then you can copy the demo file to verify that the Bucket is created correctly and hosting the file correctly
 
 ```bash
-$ aws s3 cp .\cloud-formations\architectures\s3-website\index.html s3://static-s3-bucket
+$ aws s3 cp 
+.\cloud-formations\architectures\s3-website\index.html 
+s3://static-s3-bucket
  ```
