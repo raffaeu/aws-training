@@ -1,1 +1,8 @@
 remote_theme: just-the-docs/just-the-docs
+logo: "https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35.png"
+color_scheme: dark
+
+# Google Analytics Tracking (optional)
+# e.g, UA-1234567-89
+ga_tracking: G-7HSFHJMHSZ
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
